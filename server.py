@@ -51,9 +51,9 @@ async def handler(websocket):
         connected_clients.remove(websocket)
 
 async def main():
-    print("[SERVER] Starting WebSocket server on port 1200...")
-    async with websockets.serve(handler, "0.0.0.0", 1200):
-        print("[SERVER] WebSocket server listening at ws://0.0.0.0:1200")
+    print("[SERVER] Starting WebSocket server on port 12000...")
+    async with websockets.serve(handler, "0.0.0.0", 12000):
+        print("[SERVER] WebSocket server listening at ws://0.0.0.0:12000")
         await asyncio.Future()  # run forever
 
 if __name__ == "__main__":
